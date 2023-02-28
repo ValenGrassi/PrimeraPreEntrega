@@ -35,7 +35,7 @@ routerProducts.post("/", (req, res) => {
 routerProducts.put("/:pid", (req,res) => {
     const updates = req.body
     const idBuscado = req.params.pid;
-    const producto = fileManager.updateProduct(idBuscado, {updates})
+    const producto = fileManager.updateProduct(idBuscado, updates)
     res.json({
         cambios: updates,
         resultado: producto

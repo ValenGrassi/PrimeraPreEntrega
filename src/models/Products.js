@@ -5,7 +5,7 @@ class Product{
         this.id = Math.random().toString(30).substring(2);
         this.status = status
         this.thumbnail = thumbnail
-
+        
         this.title = title
         if (title == undefined){
             throw new Error("el titulo es obligatorio")
@@ -29,7 +29,7 @@ class Product{
         this.category = category
         if (category == undefined){
             throw new Error("la categoría es obligatoria")
-        }   
+        }
     }
 }
 
